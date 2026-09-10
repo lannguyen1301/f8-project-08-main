@@ -1,0 +1,22 @@
+{
+  "name": "f8-project-08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lannguyen1301/f8-project-08-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lannguyen1301/f8-project-08-main/issues"
+  },
+  "homepage": "https://github.com/lannguyen1301/f8-project-08-main#readme"
+}
