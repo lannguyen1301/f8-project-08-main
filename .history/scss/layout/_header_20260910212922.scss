@@ -1,0 +1,27 @@
+.header {
+    background: #eee;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+
+.navbar {
+    margin-left: 144px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        font-family: Gordita;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 1.;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+}

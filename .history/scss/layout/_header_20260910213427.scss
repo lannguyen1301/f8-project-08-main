@@ -1,0 +1,26 @@
+.header {
+    background: #eee;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+
+.navbar {
+    margin-left: 144px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+        /* tại sao lại có 146.667%, lấy (22 / 15) * 100. 22 là line-height và 1 */
+        letter-spacing: 0%;
+    }
+}

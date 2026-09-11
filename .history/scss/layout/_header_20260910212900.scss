@@ -1,0 +1,20 @@
+.header {
+    background: #eee;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+
+.navbar {
+    margin-left: 144px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__li
+}
