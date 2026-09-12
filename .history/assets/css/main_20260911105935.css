@@ -1,0 +1,21 @@
+/* Error: Undefined variable.
+ *    ,
+ * 13 |         @media (max-width: ($breakpoint -- 0.02)) {
+ *    |                             ^^^^^^^^^^^
+ *    '
+ *   scss\abstracts\_mixins.scss 13:29  breakpoint()
+ *   scss\layout\_header.scss 14:5      @forward
+ *   scss\layout\_index.scss 1:1        @use
+ *   scss\main.scss 3:1                 root stylesheet */
+
+body::before {
+    font-family:
+        "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+        "Droid Sans Mono", monospace, monospace;
+    white-space: pre;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+    content: "Error: Undefined variable.\a    \2577 \a 13 \2502          @media (max-width: ($breakpoint -- 0.02)) {\d\a    \2502                              ^^^^^^^^^^^\a    \2575 \a   scss\\abstracts\\_mixins.scss 13:29  breakpoint()\a   scss\\layout\\_header.scss 14:5      @forward\a   scss\\layout\\_index.scss 1:1        @use\a   scss\\main.scss 3:1                 root stylesheet";
+}
