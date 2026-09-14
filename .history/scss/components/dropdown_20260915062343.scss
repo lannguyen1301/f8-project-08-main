@@ -1,0 +1,111 @@
+.dropdown {
+    position: absolute;
+    left: 0;
+    width: min(
+        124rem,
+        100%
+    ); /* tương đương 1240px, đã chuyển đổi 1rem = 10px trong file base  */
+
+    padding-top: 5.4rem;
+    display: none;
+
+    &__inner {
+        --inner-max-height: min(
+            58.2rem,
+            100vh - 15.8rem
+        ); /* 58.2 rem = 582px, 15.8rem = 158px */
+
+        position: relative;
+
+        max-height: var(--inner-max-height);
+
+        padding: 30px;
+
+        border-radius: 20px;
+        background: var(--dropdown-bg-color);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+
+        &::before {
+            content: url("../icons/dropdown-arrow.svg");
+            position: absolute;
+            top: -13px;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+
+            filter: var(--dropdown-arrow-color);
+        }
+    }
+}
+
+.top-menu {
+    max-height: calc(v - 60px);
+
+    &__main {
+        // width: 292px;
+        width: 29.2rem;
+        max-height: inherit;
+        border-right: 0.1rem solid var(--top-menu-border-color);
+        overflow-y: scroll;
+    }
+}
+
+.menu-column {
+    display: flex;
+    gap: 1.4rem;
+
+    &__icon {
+        position: relative;
+
+        flex-shrink: 0;
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__icon-1 {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+
+    &__icon-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        width: 2.4rem;
+        height: 2.4rem;
+        object-fit: cover;
+    }
+
+    &__heading {
+        margin-top: 0.4rem;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 150% */
+    }
+
+    &__list {
+        margin-top: 1.9rem;
+    }
+
+    &__item {
+        /* chưa có class */
+    }
+
+    &__link {
+        display: block;
+        padding: 0.7rem 0;
+        font-size: 1.4rem;
+        line-height: 142.857%; /* 2rem */
+
+        &:hover {
+            color: #0071dc;
+            font-weight: 500;
+        }
+    }
+}
