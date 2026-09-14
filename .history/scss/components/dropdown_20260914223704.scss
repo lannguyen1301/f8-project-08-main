@@ -1,0 +1,69 @@
+.dropdown {
+    position: absolute;
+    left: 0;
+    width: min(
+        124rem,
+        100%
+    ); /* tương đương 1240px, đã chuyển đổi 1rem = 10px trong file base  */
+
+    padding-top: 54px;
+    display: none;
+
+    &__inner {
+        position: relative;
+
+        height: min(
+            58.2rem,
+            100vh - 15.8rem
+        ); /* 58.2 rem = 582px, 15.8rem = 158px */
+
+        padding: 30px;
+
+        border-radius: 20px;
+        background: var(--dropdown-bg-color);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+
+        &::before {
+            content: url("../icons/dropdown-arrow.svg");
+            position: absolute;
+            top: -13px;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+
+            filter: var(--dropdown-arrow-color);
+        }
+    }
+}
+
+.top-menu {
+    height: 100%;
+    &__main {
+        // width: 292px;
+        width: 29.2rem;
+        height: 100%;
+        border-right: 0.1rem solid var(--top-menu-border-color);
+    }
+}
+
+.menu-column {
+    &__icon {
+        width: 3.6rem;
+        height: 3.6rem;
+        position: relative;
+    }
+
+    &__icon-1 {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+
+    &__icon-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 2.4rem;
+        height: 2.4rem;
+        object-fit: cover;
+    }
+}
