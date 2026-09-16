@@ -1,0 +1,140 @@
+@use "../abstracts";
+.dropdown {
+    position: absolute;
+    left: 0;
+    width: min(124rem, 100%); /* tương đương 1240px, đã chuyển đổi 1rem = 10px trong file base  */
+
+    padding-top: 5.4rem;
+    display: none;
+
+    &__inner {
+        --inner-padding: 3rem; /* 30px */
+
+        position: relative;
+
+        padding: var(--inner-padding);
+
+        border-radius: 20px;
+        background: var(--dropdown-bg-color);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+
+        &::before {
+            content: url("../icons/dropdown-arrow.svg");
+            position: absolute;
+            top: -13px;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+
+            filter: var(--dropdown-arrow-color);
+        }
+    }
+}
+
+.top-menu {
+    --main-column-width: 29.2rem;
+    --max-inner-height: calc(min(58.2rem, 100vh - 15.8rem) - var(--inner-padding) * 2);
+    position: relative;
+
+    &__main {
+        // width: 292px;
+        width: var(--main-column-width);
+        // height: calc(min(58.2rem, 100vh - 15.8rem) - var(--inner-padding) * 2);
+        height: ;
+        /* 58.2 rem = 582px, 15.8rem = 158px */
+        border-right: 0.1rem solid var(--top-menu-border-color);
+        overflow-y: scroll;
+    }
+}
+
+.menu-column {
+    display: flex;
+    gap: 1.4rem;
+
+    + .menu-column {
+        margin-top: 2.2rem;
+    }
+
+    &__icon {
+        position: relative;
+
+        flex-shrink: 0;
+        width: 3.6rem;
+        height: 3.6rem;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__icon-1 {
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+    }
+
+    &__icon-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        width: 2.4rem;
+        height: 2.4rem;
+        object-fit: contain;
+        filter: var(--menu-column-icon-color);
+    }
+
+    &__heading {
+        margin-top: 0.4rem;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 150% */
+    }
+
+    &__list {
+        margin-top: 1.9rem;
+    }
+
+    &__item {
+        &--active .sub-menu {
+            display: grid;
+        }
+    }
+
+    &__item--active > &__link,
+    &__item:hover > &__link {
+        color: #0071dc;
+        font-weight: 500;
+    }
+
+    &__link {
+        display: block;
+        padding: 0.7rem 0;
+        font-size: 1.4rem;
+        line-height: 142.857%; /* 2rem */
+    }
+}
+
+.sub-menu {
+    position: absolute;
+    inset: 0 0 0 var(--main-column-width);
+
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: var(--inner-padding);
+
+    padding-left: var(--inner-padding);
+
+    overflow-y: auto;
+
+    &--not-main {
+        position: initial;
+        inset: initial;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
