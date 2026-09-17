@@ -1,0 +1,35 @@
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+$display-values: block, flex, grid, none;
+
+@mixin make-display($breakpoint: null) {
+$infix: if($breakpoint, "#-$brea")
+
+    @each $display in $display-values {
+        @debug ".d-#{$breakpoint}-#{$display}";
+    }
+}
+
+@each $breakpoint, $dimension in $breakpoints {
+    @media (max-width: ($dimension - 0.02)) {
+        @include make-display($breakpoint);
+    }
+}
+
+// @mixin make-display($breakpoint) {
+//     @each $display in $display-values {
+//         @debug ".d-#{$breakpoint}-#{$display}";
+//     }
+// }
+
+// @each $breakpoint, $dimension in $breakpoints {
+//     @media (max-width: ($dimension - 0.02)) {
+//         @include make-display($breakpoint);
+//     }
+// }

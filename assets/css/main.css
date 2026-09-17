@@ -1213,6 +1213,92 @@ select {
     --grid-gutter-y: 90px;
   }
 }
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (max-width: 1399.98px) {
+  .dxxl-block {
+    display: block !important;
+  }
+  .dxxl-flex {
+    display: flex !important;
+  }
+  .dxxl-grid {
+    display: grid !important;
+  }
+  .dxxl-none {
+    display: none !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .dxl-block {
+    display: block !important;
+  }
+  .dxl-flex {
+    display: flex !important;
+  }
+  .dxl-grid {
+    display: grid !important;
+  }
+  .dxl-none {
+    display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .dlg-block {
+    display: block !important;
+  }
+  .dlg-flex {
+    display: flex !important;
+  }
+  .dlg-grid {
+    display: grid !important;
+  }
+  .dlg-none {
+    display: none !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .dmd-block {
+    display: block !important;
+  }
+  .dmd-flex {
+    display: flex !important;
+  }
+  .dmd-grid {
+    display: grid !important;
+  }
+  .dmd-none {
+    display: none !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .dsm-block {
+    display: block !important;
+  }
+  .dsm-flex {
+    display: flex !important;
+  }
+  .dsm-grid {
+    display: grid !important;
+  }
+  .dsm-none {
+    display: none !important;
+  }
+}
 html.dark {
   --text-color: #fff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
@@ -1291,14 +1377,6 @@ html {
   .top-bar {
     justify-content: space-between;
     padding: 16px 0;
-  }
-}
-.top-bar__more {
-  display: none;
-}
-@media (max-width: 991.98px) {
-  .top-bar__more {
-    display: block;
   }
 }
 
@@ -1405,11 +1483,6 @@ html {
   border-radius: 8px;
   background: var(--top-act-group-bg-color);
   box-shadow: 0px 20px 60px 10px var(--top-act-group-bg-shadow);
-}
-@media (max-width: 767.98px) {
-  .top-act__group {
-    display: none;
-  }
 }
 @media (max-width: 991.98px) {
   .top-act__group--single {
