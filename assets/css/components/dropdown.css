@@ -163,5 +163,11 @@
   height: var(--max-inner-height);
   padding-left: 0;
 }
+@media (max-width: 991.98px) {
+  .sub-menu--not-main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
 
 /*# sourceMappingURL=dropdown.css.map */

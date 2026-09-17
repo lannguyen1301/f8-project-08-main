@@ -189,7 +189,7 @@
 
         @include abstracts.breakpoint(lg) {
             grid-template-columns: 1fr;
-            height: auto;
+            height: ;
         }
     }
 }

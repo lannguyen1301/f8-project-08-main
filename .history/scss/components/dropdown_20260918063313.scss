@@ -187,9 +187,6 @@
         height: var(--max-inner-height);
         padding-left: 0;
 
-        @include abstracts.breakpoint(lg) {
-            grid-template-columns: 1fr;
-            height: auto;
-        }
+        @include abstracts.breakpoint(lg) Ơ
     }
 }
