@@ -46,8 +46,8 @@
             }
         }
 
-        @include abstracts.breakpoint(sm) {
-            padding: 0 20px;
+        @include abstracts.breakpoint(lg) {
+            
         }
     }
 }
