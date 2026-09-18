@@ -1,0 +1,33 @@
+.slideshow {
+    // margin: 40px 0;
+    position: relative;
+    margin: 4rem 0;
+
+    &__inner {
+        display: flex;
+        overflow: hidden;
+    }
+
+    &__item {
+        //
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__page {
+        //
+        position: a;
+    }
+
+    &__num {
+        //
+    }
+
+    &__slider {
+        //
+    }
+}

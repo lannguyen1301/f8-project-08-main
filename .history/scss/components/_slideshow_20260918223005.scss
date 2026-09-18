@@ -1,0 +1,27 @@
+.slideshow {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        //
+        width: 100%;
+    }
+
+    &__img {
+    }
+
+    &__page {
+        //
+    }
+
+    &__num {
+        //
+    }
+
+    &__slider {
+        //
+    }
+}
