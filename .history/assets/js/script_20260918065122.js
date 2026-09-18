@@ -168,6 +168,7 @@ function initJsToggle() {
     });
 }
 
+
 window.addEventListener("template-loaded", () => {
     const links = $$(".js-dropdown-list > li > a");
 

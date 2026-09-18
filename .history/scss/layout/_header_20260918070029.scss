@@ -151,7 +151,6 @@
 
         @include abstracts.breakpoint(lg) {
             rotate: -90deg;
-            transition: rotate 0.3s;
         }
     }
 

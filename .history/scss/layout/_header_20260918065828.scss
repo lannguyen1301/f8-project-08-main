@@ -150,13 +150,8 @@
         margin-top: 3px;
 
         @include abstracts.breakpoint(lg) {
-            rotate: -90deg;
-            transition: rotate 0.3s;
+            rotate: -90
         }
-    }
-
-    &__item--active &__arrow {
-        rotate: 0deg;
     }
 }
 
