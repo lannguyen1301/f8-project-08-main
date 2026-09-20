@@ -1,0 +1,25 @@
+.cate-item {
+    display: flex;
+    column-gap: 20px;
+
+    padding: 20px 26px;
+    border-radius: 16px;
+    background: var(--cate-item-bg);
+    &__thumb {
+        background: var(--cate-item-thumb-bg);
+        height: 166px;
+        width: 166px;
+        border-radius: 8px;
+        object-fit: contain;
+    }
+
+    &__info {
+        //
+    }
+    &__title {
+        //
+    }
+    &__desc {
+        //
+    }
+}

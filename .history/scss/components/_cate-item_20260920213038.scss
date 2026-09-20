@@ -1,0 +1,28 @@
+.cate-item {
+    display: flex;
+    column-gap: 20px;
+
+    padding: 20px 26px;
+    border-radius: 16px;
+    background: var(--cate-item-bg);
+    &__thumb {
+        width: 166px;
+        height: 166px;
+        object-fit: contain;
+        border-radius: 8px;
+        background: var(--cate-item-thumb-bg);
+    }
+
+    &__info {
+        //
+    }
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 145.455%; /* 3.2rem */
+        color: var(--cate-item-title-c);
+    }
+    &__desc {
+        //
+    }
+}

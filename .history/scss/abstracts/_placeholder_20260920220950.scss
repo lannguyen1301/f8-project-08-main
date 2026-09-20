@@ -1,0 +1,79 @@
+// 1. FLEXBOX
+// ==========================================
+
+// Flex căn giữa cả 2 chiều
+%flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Xếp cột dọc
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+// Ví dụ thêm vào file _placeholders.scss
+%flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// Xếp cột dọc và căn giữa (Giống hệt phần .cate-item__info bạn đang làm)
+%2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Flex chỉ căn giữa trục dọc (thường dùng cho các item xếp ngang)
+%flexItemCenter {
+    display: flex;
+    align-items: center;
+}
+
+// Căn giữa trục dọc, đẩy 2 bên ra xa (Thường dùng cho Header, Navbar)
+%flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// ==========================================
+// 2. VỊ TRÍ (POSITION)
+// ==========================================
+
+// Căn giữa tuyệt đối (thường dùng cho icon, popup, loading)
+%absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// ==========================================
+// 3. XỬ LÝ TEXT & GIAO DIỆN
+// ==========================================
+
+// Chống tràn chữ 1 dòng (cắt chữ bằng dấu 3 chấm ...)
+%textEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Ẩn element nhưng không làm mất khỏi trình đọc màn hình (Tốt cho SEO / Accessibility)
+%srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

@@ -1,0 +1,24 @@
+@use "../abstracts";
+
+.home {
+    &__container {
+        // margin-top: 40px;
+        margin-top: 4rem;
+
+        @include abstracts.screen(md) {
+            // margin-top: 30px;
+            margin-top: 3rem;
+        }
+    }
+
+    &__heading {
+        color: var(--Secondary-Color-Secondary-1, #1A162E);
+
+/* Bold 24 */
+font-family: Gordita;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.4rem; /* 141.667% */
+    }
+}

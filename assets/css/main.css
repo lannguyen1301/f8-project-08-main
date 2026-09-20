@@ -412,7 +412,7 @@ select {
   --grid-gutter-y: 90px;
 }
 
-@media (min-width: 1399.98px) {
+@media (max-width: 1399.98px) {
   .container {
     max-width: 1140px;
   }
@@ -573,7 +573,7 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .container {
     max-width: 960px;
   }
@@ -734,7 +734,7 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 991.98px) {
+@media (max-width: 991.98px) {
   .container {
     max-width: 720px;
   }
@@ -895,7 +895,7 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 767.98px) {
+@media (max-width: 767.98px) {
   .container {
     max-width: 540px;
   }
@@ -1056,7 +1056,7 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 575.98px) {
+@media (max-width: 575.98px) {
   .container {
     max-width: 100%;
   }
@@ -1303,6 +1303,17 @@ select {
     display: none !important;
   }
 }
+.cate-item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-bar, .navbar__list, .navbar__link, .top-act, .top-act__group, .top-act__btn {
+  display: flex;
+  align-items: center;
+}
+
 html.dark {
   --text-color: #fff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(304deg) brightness(113%)
@@ -1330,6 +1341,10 @@ html.dark {
   /* Sidebar*/
   --sidebar-bg: #292e39;
   --sidebar-shadow: rgba(23, 28, 40, 0.4);
+  /* Cate Item */
+  --cate-item-bg: #171c28;
+  --cate-item-thumb-bg: #292e39;
+  --cate-item-title-color: #fff;
 }
 
 html {
@@ -1356,6 +1371,15 @@ html {
   /* Sidebar*/
   --sidebar-bg: #fff;
   --sidebar-shadow: rgba(23, 28, 40, 0.4);
+  /* Cate Item */
+  --cate-item-bg: #eee;
+  --cate-item-thumb-bg: #fff;
+  --cate-item-title-color: #000;
+}
+@media (max-width: 767.98px) {
+  html {
+    --cate-item-bg: #fff;
+  }
 }
 
 /* import library abstracts */
@@ -1800,12 +1824,6 @@ html {
 /* import library */
 .slideshow {
   position: relative;
-  margin: 4rem 0;
-}
-@media (max-width: 767.98px) {
-  .slideshow {
-    margin: 30px 0;
-  }
 }
 .slideshow__inner {
   display: flex;
@@ -1883,6 +1901,110 @@ html {
 .slideshow__slider::after {
   right: 0;
   translate: 90% -50%;
+}
+
+.cate-item {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  padding: 20px 26px;
+  border-radius: 16px;
+  background: var(--cate-item-bg);
+}
+@media (max-width: 1199.98px) {
+  .cate-item {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767.98px) {
+  .cate-item {
+    flex-direction: row;
+    background: var(--cate-item-bg);
+  }
+}
+.cate-item__thumb {
+  display: block;
+  width: 116px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--cate-item-thumb-bg);
+}
+@media (max-width: 1199.98px) {
+  .cate-item__thumb {
+    width: 100%;
+    height: 150px;
+    aspect-ratio: 1.5; /* lấy chiều dài / chiều cao */
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .cate-item__thumb {
+    width: 88px;
+    height: 88px;
+    aspect-ratio: 1/1; /* lấy chiều dài / chiều cao */
+    margin: 0;
+  }
+}
+.cate-item__info {
+  padding-right: 30px;
+}
+@media (max-width: 1399.98px) {
+  .cate-item__info {
+    padding-right: 0;
+  }
+}
+.cate-item__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%; /* 3.2rem */
+  color: var(--cate-item-title-color);
+}
+@media (max-width: 767.98px) {
+  .cate-item__title {
+    font-size: 1.8rem;
+    line-height: 144.444%; /* 2.6rem*/
+  }
+}
+.cate-item__desc {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%; /* 2.4rem */
+}
+@media (max-width: 767.98px) {
+  .cate-item__desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 142.857%; /* 2rem */
+  }
+}
+
+.home__container {
+  margin-top: 4rem;
+}
+@media (max-width: 767.98px) {
+  .home__container {
+    margin-top: 3rem;
+  }
+}
+.home__heading {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141.667%; /* 3.4rem */
+}
+.home__cate {
+  --grid-gutter-x: 51px;
+}
+@media (max-width: 991.98px) {
+  .home__cate {
+    --grid-gutter-x: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .home__cate {
+    --grid-gutter-y: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+.cate-item {
+    display: flex;
+    padding: 20px 26px;
+    border-radius: 16px;
+    background: var(--cate-item-bg);
+    &__thumb {
+        width: 166px;
+        height: 166px;
+        object-fit: contain;
+        bor
+        background: var(--cate-item-thumb-bg);
+    }
+
+    &__info {
+    }
+    &__title {
+    }
+    &__desc {
+    }
+}
