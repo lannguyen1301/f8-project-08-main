@@ -1,0 +1,13 @@
+@use "../abstracts";
+
+// filter btn
+.filter-btn {
+    @extend %flexItemCenter;
+    gap: 14px;
+
+    color: #6c6c72;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem; /* 2re */
+}

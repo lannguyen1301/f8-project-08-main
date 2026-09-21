@@ -1,0 +1,9 @@
+@use "../abstracts";
+
+// filter btn
+.filter-btn {
+    @extend %flexItemCenter;
+    gap: 14px;
+
+    
+}

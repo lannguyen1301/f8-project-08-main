@@ -1,0 +1,16 @@
+@use "../abstracts";
+
+// filter btn
+.filter-btn {
+    @extend %flexItemCenter;
+    gap: 14px;
+
+color: #6C6C72;
+
+/* Bold 14 */
+font-family: Gordita;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2rem; /* 142.857% */
+}
