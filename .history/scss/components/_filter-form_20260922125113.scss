@@ -1,0 +1,11 @@
+@use "../abstracts";
+
+.filter-wrap {
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}

@@ -1,0 +1,45 @@
+@use "../abstracts";
+
+.filter-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.filter {
+    position: absolute;
+    right: 0;
+    top: 50px;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    background: var(--filter-form-bg);
+    filter: drop-shadow(0 40px 90px var(--filter-shadow));
+
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%; /* 3.2rem */
+    }
+
+    &__form {
+        margin-top: 30px;
+
+        &-label {
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 145.455%; /* 3.2rem */
+        }
+
+        &-group {
+            margin-top: 20px;
+        }
+
+        &-slider
+    }
+
+    &__row {
+        display: flex;
+        flex: 1;
+    }
+}

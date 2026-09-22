@@ -1,0 +1,14 @@
+@use "../abstracts";
+
+.filter-wrap {
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #fff;
+    fill: var(--Secondary-Color-Background, #fff);
+    filter: drop-shadow(0 40px 90px rgba(200, 200, 200, 0.4));
+}

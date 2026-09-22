@@ -1,0 +1,16 @@
+@use "../abstracts";
+
+.filter-wrap {
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    right: 0;
+    top: 50px;
+
+    border-radius: 20px;
+
+    background: var(--filter-form-bg);
+    filter: drop-shadow(0 40px 90px var(--filter-shadow));
+}
