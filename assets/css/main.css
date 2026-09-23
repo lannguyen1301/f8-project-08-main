@@ -147,7 +147,7 @@ table {
   justify-content: center;
 }
 
-.filter__form-select-wrap, .product-card__row, .filter-btn, .top-bar, .navbar__list, .navbar__link, .top-act, .top-act__group, .top-act__btn {
+.filter__form-text-input, .filter__form-select-wrap, .product-card__row, .filter-btn, .top-bar, .navbar__list, .navbar__link, .top-act, .top-act__group, .top-act__btn {
   display: flex;
   align-items: center;
 }
@@ -197,9 +197,11 @@ button,
 input,
 textarea,
 select {
+  padding: 0;
   font-family: inherit;
   color: inherit;
   outline: none;
+  border: none;
   --webkit-tab-highlight-color: transparent;
 }
 
@@ -2150,17 +2152,36 @@ html {
 .filter__form-slider::after {
   left: var(--max-value);
 }
-.filter__form-input, .filter__form-select-wrap {
+.filter__form-text-input, .filter__form-select-wrap {
   border-radius: 0.6rem;
   border: 1px solid #d2d1d6;
 }
-.filter__form-input {
+.filter__form-text-input {
+  width: 334px;
+  height: 44px;
+  padding: 0 16px;
+  overflow: hidden;
+}
+.filter__form-text-input--small {
   width: 121px;
   height: 36px;
   padding: 0 12px;
+}
+.filter__form-text-input-text-input--small .filter__form-text-input-input {
   font-size: 1.4rem;
+}
+.filter__form-input {
+  width: 100%;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 142.857%; /* 2rem */
+}
+.filter__form-input::placeholder {
+  color: #9e9da8;
+  font-weight: 400;
+}
+.filter__form-input-input-icon {
+  margin-left: 12px;
 }
 .filter__form-select-wrap {
   height: 45px;
