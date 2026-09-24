@@ -1,0 +1,43 @@
+@use "../abstracts";
+
+.footer {
+    padding: 60px 0;
+
+    &__inner {
+        //
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__col {
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 900;
+        fz1.
+    }
+
+    &footer__list {
+        //
+    }
+
+    &__item {
+        //
+    }
+
+    &__link {
+        //
+    }
+
+    &__label {
+        //
+    }
+
+    &__text {
+        //
+    }
+}

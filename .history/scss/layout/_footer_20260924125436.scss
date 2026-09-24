@@ -1,0 +1,51 @@
+@use "../abstracts";
+
+.footer {
+    margin-top: 60px;
+    padding: 60px 0;
+    background: var(--footer-bg-color);
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__col {
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.8rem;
+    }
+
+    &footer__list {
+        margin-top: 30px;
+    }
+
+    &__item {
+        //
+    }
+
+    
+
+    &__link {
+        display: inline-block;
+        padding: 8px 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #0071dc;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__label {
+        font-weight: 500;
+    }
+
+    &__text {
+        //
+    }
+}
