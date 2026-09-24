@@ -149,7 +149,7 @@
             }
 
             @include abstracts.screen(sm) {
-                font-size: 1.6rem !important;
+                font-size: 1.6rem;
             }
 
             &-input-icon {
@@ -286,5 +286,5 @@
     }
 }
 
-// Tối ưu phần Footer và Filter form
 //  https://htmlcss.f8.edu.vn/?id=71f87632-aee4-4715-8026-c62e1b91378e
+// https://htmlcss.f8.edu.vn/?id=d96f5f24-e45b-42fa-9b55-f4be449e0895

@@ -153,10 +153,7 @@
         transition: translate, filter;
         transition-duration: 0.3s;
 
-        @include abstracts.screen(sm) {
-            width: 42px;
-            height: 42px;
-        }
+        @include abstracts
 
         &--facebook {
             background: #4863a9;
@@ -188,9 +185,5 @@
         width: 14px;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(304deg) brightness(113%)
             contrast(101%);
-
-        @include abstracts.screen(sm) {
-            width: 18px;
-        }
     }
 }
