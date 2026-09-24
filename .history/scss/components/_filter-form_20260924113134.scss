@@ -148,9 +148,7 @@
                 font-weight: 400;
             }
 
-            @include abstracts.screen(sm) {
-                font-size: 1.6rem;
-            }
+            
 
             &-input-icon {
                 margin-left: 12px;
@@ -252,7 +250,6 @@
 
         @include abstracts.screen(sm) {
             flex: 1;
-            height: 42px;
         }
     }
 

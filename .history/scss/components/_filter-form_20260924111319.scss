@@ -19,11 +19,7 @@
     transition-duration: 0.2s ease;
 
     @include abstracts.screen(sm) {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        inset: 0;
-        border-radius: 0;
+        width: 85vw;
     }
 
     &.hide {
@@ -65,8 +61,7 @@
             margin-top: 20px;
 
             &--inline {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                display: flex;
                 gap: 30px;
             }
         }
@@ -121,10 +116,6 @@
                 width: 121px;
                 height: 36px;
                 padding: 0 12px;
-
-                @include abstracts.screen(xl) {
-                    width: 100%;
-                }
             }
 
             @include abstracts.screen(sm) {
@@ -146,10 +137,6 @@
             &::placeholder {
                 color: #9e9da8;
                 font-weight: 400;
-            }
-
-            @include abstracts.screen(sm) {
-                font-size: 1.6rem;
             }
 
             &-input-icon {
@@ -174,10 +161,6 @@
             line-height: 142.857%; /* 2rem */
 
             cursor: pointer;
-
-            @include abstracts.screen(xl) {
-                flex: 1;
-            }
         }
 
         &-select + &-select {
@@ -193,10 +176,6 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px 20px;
-
-            @include abstracts.screen(sm) {
-                gap: 10px;
-            }
         }
 
         &-tag {
@@ -237,12 +216,6 @@
     &__footer {
         @extend %flexBottomRight;
         margin-top: 32px;
-
-        @include abstracts.screen(sm) {
-            position: sticky;
-            bottom: 30px;
-            background: var(--filter-form-bg);
-        }
     }
 
     &__cancel,
@@ -252,7 +225,6 @@
 
         @include abstracts.screen(sm) {
             flex: 1;
-            height: 42px;
         }
     }
 
@@ -264,24 +236,16 @@
         font-size: 1.4rem;
     }
 
-    &__heading,
-    &__content,
-    &__footer {
-        padding: 30px 0;
-    }
+    &__heading, &__content, &_
 
     &__content {
+        padding: 30px 0;
         max-height: calc(100vh - 350px);
         overflow: auto;
         overscroll-behavior: contain;
 
         @include abstracts.screen(xl) {
             flex-direction: column;
-        }
-
-        @include abstracts.screen(sm) {
-            max-height: calc(100vh - 230px);
-            padding-bottom: 60px;
         }
     }
 }

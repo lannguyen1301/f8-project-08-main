@@ -148,10 +148,6 @@
                 font-weight: 400;
             }
 
-            @include abstracts.screen(sm) {
-                font-size: 1.6rem;
-            }
-
             &-input-icon {
                 margin-left: 12px;
             }
@@ -237,12 +233,6 @@
     &__footer {
         @extend %flexBottomRight;
         margin-top: 32px;
-
-        @include abstracts.screen(sm) {
-            position: sticky;
-            bottom: 30px;
-            background: var(--filter-form-bg);
-        }
     }
 
     &__cancel,
@@ -252,7 +242,6 @@
 
         @include abstracts.screen(sm) {
             flex: 1;
-            height: 42px;
         }
     }
 
@@ -279,10 +268,7 @@
             flex-direction: column;
         }
 
-        @include abstracts.screen(sm) {
-            max-height: calc(100vh - 230px);
-            padding-bottom: 60px;
-        }
+        @include abstracts.screen
     }
 }
 
