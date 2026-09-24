@@ -153,7 +153,7 @@ table {
   justify-content: center;
 }
 
-.filter__form-text-input, .filter__form-select-wrap, .product-card__row, .filter-btn, .footer__socials, .top-bar, .navbar__list, .navbar__link, .top-act, .top-act__group, .top-act__btn {
+.filter__form-text-input, .filter__form-select-wrap, .product-card__row, .filter-btn, .btn, .footer__socials, .top-bar, .navbar__list, .navbar__link, .top-act, .top-act__group, .top-act__btn {
   display: flex;
   align-items: center;
 }
