@@ -1,0 +1,44 @@
+@use "../abstracts";
+
+.form {
+    //
+    &__group {
+        margin-top: 30px;
+
+        &--inline {
+            //
+        }
+    }
+
+    &__text-input {
+        color: var(--Secondary-Color-Secondary-3, #d2d1d6);
+        font-feature-settings:
+            "liga" off,
+            "clig" off;
+
+        /* Medium 18 */
+        font-family: Gordita;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.6rem; /* 144.444% */
+    }
+
+    &__input {
+        //
+        &-icon {
+            //
+        }
+    }
+
+    &__checkbox {
+        //
+        &-input {
+            //
+        }
+
+        &-label {
+            //
+        }
+    }
+}

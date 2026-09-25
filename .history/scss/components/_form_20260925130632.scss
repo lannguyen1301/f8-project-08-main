@@ -1,0 +1,33 @@
+@use "../abstracts";
+
+.form {
+    //
+    &__group {
+        mt
+        &--inline {
+            //
+        }
+    }
+
+    &__text-input {
+        //
+    }
+
+    &__input {
+        //
+        &-icon {
+            //
+        }
+    }
+
+    &__checkbox {
+        //
+        &-input {
+            //
+        }
+
+        &-label {
+            //
+        }
+    }
+}

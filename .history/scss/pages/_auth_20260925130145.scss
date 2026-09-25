@@ -1,0 +1,99 @@
+@use "../abstracts";
+
+.auth {
+    min-height: 100vh;
+    display: flex;
+
+    &__intro,
+    &__content {
+        flex: 1;
+    }
+
+    &__intro {
+        @extend %flexColumnCenter2;
+        gap: 50px;
+
+        &-img {
+            //
+        }
+
+        &-text {
+            max-width: 412px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%; /* 2.6rem */
+        }
+    }
+
+    &__content {
+        background: var(--auth-content-bg);
+
+        &-inner {
+            @extend %flexColumnCenter2;
+            text-align: center;
+
+            width: min(460px, 100%);
+            margin: 0 auto;
+        }
+    }
+
+    &__heading {
+        margin-top: 5rem;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 146.667%; /* 4.4rem */
+    }
+
+    &__desc {
+        margin-top: 1rem;
+color: #;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%; /* 2.2rem */
+    }
+
+    &__form {
+        //
+    }
+
+    &__link {
+        //
+    }
+
+    &__btn-group {
+        //
+    }
+}
+
+.form {
+    //
+    &__group {
+        //
+        &--inline {
+            //
+        }
+    }
+
+    &__text-input {
+        //
+    }
+
+    &__input {
+        //
+        &-icon {
+            //
+        }
+    }
+
+    &__checkbox {
+        //
+        &-input {
+            //
+        }
+
+        &-label {
+            //
+        }
+    }
+}

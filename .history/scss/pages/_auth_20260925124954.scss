@@ -1,0 +1,86 @@
+@use "../abstracts";
+
+.auth {
+    min-height: 100vh;
+    display: flex;
+
+    &__intro,
+    &__content {
+        flex: 1;
+    }
+
+    &__intro {
+        @extend %flexColumnCenter2;
+        gap: 50px;
+
+        &-text
+    }
+
+    &__intro-img {
+        //
+    }
+
+    &__intro-text {
+        //
+    }
+
+    &__content {
+        //
+    }
+
+    &__content-inner {
+        //
+    }
+
+    &__heading {
+        //
+    }
+
+    &__desc {
+        //
+    }
+
+    &__form {
+        //
+    }
+
+    &__link {
+        //
+    }
+
+    &__btn-group {
+        //
+    }
+}
+
+.form {
+    //
+    &__group {
+        //
+        &--inline {
+            //
+        }
+    }
+
+    &__text-input {
+        //
+    }
+
+    &__input {
+        //
+        &-icon {
+            //
+        }
+    }
+
+    &__checkbox {
+        //
+        &-input {
+            //
+        }
+
+        &-label {
+            //
+        }
+    }
+}

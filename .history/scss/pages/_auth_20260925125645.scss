@@ -1,0 +1,88 @@
+@use "../abstracts";
+
+.auth {
+    min-height: 100vh;
+    display: flex;
+
+    &__intro,
+    &__content {
+        flex: 1;
+    }
+
+    &__intro {
+        @extend %flexColumnCenter2;
+        gap: 50px;
+
+        &-img {
+            //
+        }
+
+        &-text {
+            max-width: 412px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%; /* 2.6rem */
+        }
+    }
+
+    &__content {
+        background: var(--auth-content-bg);
+
+        &-inner {
+            //
+        }
+    }
+
+    &__heading {
+        //
+    }
+
+    &__desc {
+        //
+    }
+
+    &__form {
+        //
+    }
+
+    &__link {
+        //
+    }
+
+    &__btn-group {
+        //
+    }
+}
+
+.form {
+    //
+    &__group {
+        //
+        &--inline {
+            //
+        }
+    }
+
+    &__text-input {
+        //
+    }
+
+    &__input {
+        //
+        &-icon {
+            //
+        }
+    }
+
+    &__checkbox {
+        //
+        &-input {
+            //
+        }
+
+        &-label {
+            //
+        }
+    }
+}

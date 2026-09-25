@@ -1,0 +1,40 @@
+@use "../abstracts";
+
+.form {
+    //
+    &__group {
+        margin-top: 30px;
+
+        &--inline {
+            //
+        }
+    }
+
+    &__text-input {
+        
+        border-radius: 10px;
+        border: 1px solid #d2d1d6;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%; /* 2.6rem */
+    }
+
+    &__input {
+        //
+        &-icon {
+            //
+        }
+    }
+
+    &__checkbox {
+        //
+        &-input {
+            //
+        }
+
+        &-label {
+            //
+        }
+    }
+}
