@@ -1,3 +1,5 @@
+
+
 import { showError, showSuccess, emailRegex } from "./validation.js";
 
 const form = document.getElementById("form-signup");
