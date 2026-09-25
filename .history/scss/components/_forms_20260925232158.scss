@@ -1,0 +1,128 @@
+@use "../abstracts";
+
+.form {
+    &:has(:invalid) &__submit-btn {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &__group {
+        margin-top: 30px;
+
+        &--inline {
+            @extend %flexItemCenter;
+        }
+    }
+
+    &__group:has(:invalid):has(&__input:not(:placeholder-shown)) {
+        .form__text-input {
+            border-color: red;
+            background: rgba($color: red, $alpha: 0.1);
+        }
+
+        .form__error,
+        .form__input-icon-error {
+            display: block;
+        }
+
+        .form__input-icon {
+            display: none;
+        }
+    }
+
+    &__text-input {
+        @extend %flexItemCenter;
+
+        height: 50px;
+        padding: 0 12px;
+        border-radius: 10px;
+        border: 1.5px solid #d2d1d6;
+
+        &:focus-within {
+            border-color: #77dae6;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        height: 100%;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%; /* 2.6rem */
+
+        &-icon {
+            margin-left: 12px;
+        }
+
+        &::placeholder {
+            color: #d2d1d6;
+        }
+    }
+
+    &__error {
+        text-align-last: left;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 10px;
+        color: red;
+        display: none;
+    }
+
+    &__input-icon-error {
+        display: none;
+        // có thể di chuyển nó vào bên trong &__input (cú pháp chuẩn của nó là &-icon-error; khi đưa vào trong)
+
+        margin-left: 12px;
+        width: 24px;
+        height: 24px;
+
+        animation: shake 0.8s;
+    }
+
+    &__pull-right {
+        margin-left: auto;
+    }
+
+    &__checkbox {
+        position: relative;
+
+        @extend %flexItemCenter;
+
+        &-input {
+            //
+        }
+
+        &-label {
+            margin-left: 29px;
+            color: #9e9da8;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 146.667%; /* 2.2rem */
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+        }
+
+        &::before {
+            width: 19px;
+            height: 19px;
+            border-radius: 5px;
+            border: 1.5px solid #9e9da8;
+        }
+
+        &::after {
+            //
+        }
+    }
+
+    &__checkbox:has(:checked) {
+        &::before {
+            background: orangered;
+            bỏ
+        }
+    }
+}

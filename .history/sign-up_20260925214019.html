@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up grocery Mart</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- script -->
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <main class="auth">
+        <!-- Auth intro -->
+        <a href="./" class="logo auth__intro-logo d-none d-md-flex">
+            <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img">
+            <h1 class="logo__title">grocerymart</h1>
+        </a>
+
+        <div class="auth__intro">
+            <img src="./assets/img/auth/intro.svg" alt="auth" class="auth__intro-img">
+            <p class="auth__intro-text"> The best of luxury brand values, high quality products, and innovative services
+            </p>
+            <button class="auth__intro-next d-none d-md-flex js-toggle" toggle-target="#auth__content">
+                <img src="../assets/img/auth/intro-arrow.svg" alt="intro-arrow">
+            </button>
+        </div>
+
+        <!-- Auth content -->
+        <div id="auth__content" class="auth__content hide">
+            <div class="auth__content-inner">
+                <!-- logo -->
+                <a href="./" class="logo">
+                    <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img">
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
+                <h1 class="auth__heading">Sign Up</h1>
+                <p class="auth__desc">Let’s create your account and Shop like a pro and save money.
+                </p>
+                <form action="./index-logined.html" class="form auth__form">
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="email" name="" id="" placeholder="Email" class="form__input" required>
+                            <img src="./assets/icons/message.svg" alt="message" class="form__input-icon">
+                            <img src="./assets/icons/<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM320 384C302.3 384 288 398.3 288 416C288 433.7 302.3 448 320 448C337.7 448 352 433.7 352 416C352 398.3 337.7 384 320 384zM320 192C301.8 192 287.3 207.5 288.6 225.7L296 329.7C296.9 342.3 307.4 352 319.9 352C332.5 352 342.9 342.3 343.8 329.7L351.2 225.7C352.5 207.5 338.1 192 319.8 192z"/></svg>" alt="message" class="form__input-icon">
+                        </div>
+                        <p class="from__error">Email chưa đúng định dang</p>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="password" name="" id="" placeholder="Password" class="form__input" required
+                                minlength="6">
+                            <img src="./assets/icons/lock.svg" alt="lock" class="form__input-icon">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="password" name="" id="" placeholder="Confirm Password" class="form__input"
+                                required minlength="6">
+                            <img src="./assets/icons/lock.svg" alt="lock" class="form__input-icon">
+                        </div>
+                    </div>
+
+                    <div class="form__group form__group--inline">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="" class="form__checkbox-input" required>
+                            <span class="form__checkbox-label">Set as default card</span>
+                        </label>
+                        <a href="#!" class="auth__link form__pull-right">Recovery Password</a>
+                    </div>
+                    <div class="form__group auth__btn-group">
+                        <button class="btn btn--primary auth__btn">Sign Up</button>
+                        <button class="btn btn--outline auth__btn btn--no-margin">
+                            <img src="./assets/icons/google.svg" alt="" class="btn-icon">
+                            Sign in with Gmail
+                        </button>
+                    </div>
+                </form>
+
+                <p class="auth__text">You have an account yet?
+                    <a href="./sign-in.html" class="auth__link">Sign In</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.dispatchEvent(new Event("template-loaded"))
+    </script>
+</body>
+
+</html>
