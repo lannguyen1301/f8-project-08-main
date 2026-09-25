@@ -1,0 +1,61 @@
+@use "../abstracts";
+
+.form {
+    //
+    &__group {
+        margin-top: 30px;
+
+        &--inline {
+            @extend %flexItemCenter;
+        }
+    }
+
+    &__text-input {
+        @extend %flexItemCenter;
+
+        height: 50px;
+        padding: 0 12px;
+        border-radius: 10px;
+        border: 1.5px solid #d2d1d6;
+
+        &:focus-within {
+            border-color: #77dae6;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        height: 100%;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%; /* 2.6rem */
+
+        &-icon {
+            margin-left: 12px;
+        }
+
+        &::placeholder {
+            color: #d2d1d6;
+        }
+    }
+
+    &__pull-right {
+        margin-left: auto;
+    }
+
+    &__checkbox {
+        @extend %flexItemCenter;
+        gap: 10px;
+
+        &-input {
+            //
+        }
+
+        &-label {
+            color: #9e9da8;
+            font-size: 1.5rem;
+            line-height: 146.667%; /* 2.2rem */
+        }
+    }
+}
