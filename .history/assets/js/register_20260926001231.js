@@ -19,6 +19,7 @@ if (form) {
 
     password.addEventListener("blur", () => {
         if (password.value.trim() !== "") {
+            // Thay vì check length < 6, ta dùng Regex
             if (!strongPasswordRegex.test(password.value.trim())) {
                 showError(password, "Mật khẩu tối thiểu 8 ký tự, gồm chữ hoa, thường, số và ký tự đặc biệt");
             } else {
@@ -47,25 +48,21 @@ if (form) {
         e.preventDefault();
         let isValid = true;
 
-        // Check Email
         if (!emailRegex.test(email.value.trim())) {
             showError(email, "Email không đúng định dạng");
             isValid = false;
         }
 
-        // Check Password (Mật khẩu mạnh)
-        if (!strongPasswordRegex.test(password.value.trim())) {
-            showError(password, "Mật khẩu tối thiểu 8 ký tự, gồm chữ hoa, thường, số và ký tự đặc biệt");
+        if (password.value.trim().length < 6) {
+            showError(password, "Mật khẩu ít nhất 6 ký tự");
             isValid = false;
         }
 
-        // Check Confirm Password
         if (confirmPassword.value.trim() === "" || confirmPassword.value !== password.value) {
             showError(confirmPassword, "Mật khẩu không khớp");
             isValid = false;
         }
 
-        // Chuyển trang nếu mọi thứ hợp lệ
         if (isValid) {
             console.log("Form hợp lệ, đang xử lý...");
             window.location.href = "./index-logined.html";
@@ -83,10 +80,10 @@ togglePasswordIcons.forEach((icon) => {
         if (input) {
             if (input.type === "password") {
                 input.type = "text";
-                this.src = "./assets/icons/eye.svg"; // Icon mắt mở
+                this.src = "./assets/icons/eye.svg"; // Đảm bảo bạn có file eye.svg trong thư mục
             } else {
                 input.type = "password";
-                this.src = "./assets/icons/eye-slash.svg"; // Icon mắt nhắm
+                this.src = "./assets/icons/eye-slash.svg"; // Đảm bảo bạn có file eye-slash.svg
             }
         }
     });

@@ -22,8 +22,7 @@
 
 // Hàm hiển thị lỗi
 export function showError(inputElement, message) {
-    inputElement.setCustomValidity(message); // Kích hoạt viền đỏ CSS
-
+    inputElement.setCustomValidity(message);
     const formGroup = inputElement.closest(".form__group");
     const errorElement = formGroup.querySelector(".form__error");
     if (errorElement) {
@@ -33,11 +32,10 @@ export function showError(inputElement, message) {
 
 // Hàm xóa lỗi
 export function showSuccess(inputElement) {
-    inputElement.setCustomValidity(""); // Tắt viền đỏ CSS
+    inputElement.setCustomValidity("");
 }
 
-// Biểu thức kiểm tra email
 export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Biểu thức kiểm tra mật khẩu mạnh (tối thiểu 8 ký tự, có hoa, thường, số, ký tự đặc biệt)
+// THÊM DÒNG NÀY VÀO CUỐI: Regex mật khẩu mạnh
 export const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;

@@ -23,9 +23,9 @@
 // Hàm hiển thị lỗi
 export function showError(inputElement, message) {
     inputElement.setCustomValidity(message); // Kích hoạt viền đỏ CSS
-
-    const formGroup = inputElement.closest(".form__group");
-    const errorElement = formGroup.querySelector(".form__error");
+    
+    const formGroup = inputElement.closest('.form__group');
+    const errorElement = formGroup.querySelector('.form__error');
     if (errorElement) {
         errorElement.innerText = message;
     }
@@ -33,7 +33,7 @@ export function showError(inputElement, message) {
 
 // Hàm xóa lỗi
 export function showSuccess(inputElement) {
-    inputElement.setCustomValidity(""); // Tắt viền đỏ CSS
+    inputElement.setCustomValidity(''); // Tắt viền đỏ CSS
 }
 
 // Biểu thức kiểm tra email

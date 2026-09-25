@@ -38,6 +38,3 @@ export function showSuccess(inputElement) {
 
 // Biểu thức kiểm tra email
 export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-// Biểu thức kiểm tra mật khẩu mạnh (tối thiểu 8 ký tự, có hoa, thường, số, ký tự đặc biệt)
-export const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
