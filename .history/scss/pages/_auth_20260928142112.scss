@@ -36,7 +36,8 @@
         }
 
         &-img {
-            width: min(424px, 100%);
+            width: min;
+            max-width: 100%;
         }
 
         &-text {
